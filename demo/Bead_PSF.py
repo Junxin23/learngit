@@ -1,6 +1,7 @@
 import sys
 sys.path.append("/home/aa/as13000/FJX/Back_PSF")
 import numpy as np
+import cupy as cp
 from copy_psflearning.learning.forwardProject import forward_project
 from copy_psflearning.io.dataloader import Dataloader
 from copy_psflearning.learning.fitters.Fitter_file import Fitter
