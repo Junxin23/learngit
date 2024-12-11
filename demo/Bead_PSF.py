@@ -43,5 +43,5 @@ for u in range(PSF_Reshape.shape[-1]):
     
 PSF_init = np.zeros((PSF.shape[0] * PSF.shape[1], PSF.shape[2], PSF.shape[3], PSF.shape[4]))
 
-Optimizer = Fitter(object, wdf, PSF_Reshape)
+Optimizer = Fitter(object, wdf, PSF_init)
 Optimizer.learn_psf()
